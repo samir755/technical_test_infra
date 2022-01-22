@@ -70,28 +70,26 @@ echo "ServerName test.local" >> /etc/apache2/apache2.conf
 # Création du fichier Host
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
-        ServerName test.local
-        ServerAdmin admin@test.local
-        DocumentRoot /var/www/html/demo/public
-        <Directory /var/www/demo/public>
-          AllowOverride None
-          Order Allow,Deny
-          Allow from All
+    ServerName test.local
+    ServerAdmin admin@test.local
+    ServerAlias localhost
+    DocumentRoot /var/www/html/demo/public
 
-          <IfModule mod_rewrite.c>
+    <Directory /var/www/demo/public>
+        AllowOverride None
+        Order Allow,Deny
+        Allow from All
+
+        <IfModule mod_rewrite.c>
             Options -MultiViews
             RewriteEngine On
             RewriteCond %{REQUEST_FILENAME} !-f
             RewriteRule ^(.*)$ index.php [QSA,L]
-          </IfModule>
-       </Directory>
+        </IfModule>
+    </Directory>
 
-      <Directory /var/www/demo>
-         Options FollowSymlinks
-      </Directory>
-
-     ErrorLog /var/log/apache2/project_error.log
-     CustomLog /var/log/apache2/project_access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/error_monsite.log
+    CustomLog ${APACHE_LOG_DIR}/access_monsite.log combined
 </VirtualHost>
 EOF
 )
