@@ -27,8 +27,9 @@ First, create a **Vagrantfile** (sample is provided), you should change the folo
 * `vb.customize` : Following the configuration of your computer, you can increase or decrease values if needed (Ram, Core..)
 
 ### install.sh
-Then, create "install.sh" bash script who contain all the command needed for install VM who running an web app.
-*Sample is also provide with this test* : This sample contain only the basic command for configure linux. Feel free to improve this file. 
+Then, create `install.sh` bash script who contain all the command needed for install VM with the Symfony App.
+
+`helpme.sh` file contain the basic command for configure linux. Feel free to use it. 
 
 ### Readme.md
 
