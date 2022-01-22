@@ -71,11 +71,27 @@ echo "ServerName test.local" >> /etc/apache2/apache2.conf
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
         ServerName test.local
-        ...
-        ...
-        [ YOUR VHOST HERE ]
-        ...
-        ... 
+        ServerAdmin admin@test.local
+        DocumentRoot /var/www/html/demo/public
+        <Directory /var/www/demo/public>
+          AllowOverride None
+          Order Allow,Deny
+          Allow from All
+
+          <IfModule mod_rewrite.c>
+            Options -MultiViews
+            RewriteEngine On
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule ^(.*)$ index.php [QSA,L]
+          </IfModule>
+       </Directory>
+
+      <Directory /var/www/demo>
+         Options FollowSymlinks
+      </Directory>
+
+     ErrorLog /var/log/apache2/project_error.log
+     CustomLog /var/log/apache2/project_access.log combined
 </VirtualHost>
 EOF
 )
