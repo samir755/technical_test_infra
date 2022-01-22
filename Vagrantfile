@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = ""
   config.vm.box_check_update = true
   config.vm.hostname = "test.local"
+  config.vm.network "forwarded_port", guest: 80, host: 4567, host_ip: "127.0.0.1"
 
   config.vm.provision :shell, path: "install.sh"
 
