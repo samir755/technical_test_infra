@@ -35,6 +35,10 @@ Then, create "install.sh" bash script who contain all the command needed for ins
 Write a beautiful `readme.md` who contain all informations about versions you choose (Php, Apache...) and all significant informations needed for installation.
 Doing it like a tutorial for begineer :shipit:
 
+### helpme.sh
+
+Contain commands line for install a Web server. Feel free to use it if you need.
+
 ## Launch and test
 Once the process is over, you should be able to connect in your VM by SSH in your terminal after build and run.
 
