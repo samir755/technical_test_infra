@@ -59,7 +59,7 @@ In your Windows environment, add new hostname
 127.0.0.1    test.local
 ```
 
-The Website will be available locally at http://test.local:4567/ and PhpMyAdmin here http://test.local:4567/phpmyadmin.
+The Website will be available locally at http://test.local:4567/index.php and PhpMyAdmin here http://test.local:4567/phpmyadmin.
 
 ## Pro tips
 It's recommanded to create at begining an empty Ubuntu VM, try and launch command, and then add command line in `install.sh`
