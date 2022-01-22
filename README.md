@@ -6,8 +6,7 @@
 
 ### Goal
 
-Create a VM Ubuntu Server 20.04 LTS (Focal Fissa) in a local environment with Vagrant.
-This VM will run a web application available in [this repository]().
+Create a VM Ubuntu Server 20.04 LTS (Focal Fissa) in a local environment with Vagrant. This VM have to run a web application available in [this repository]().
 
 You have to sent your work in *Github* with this folowing files:
 * :card_index_dividers: `Vagrantfile`
