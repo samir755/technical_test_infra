@@ -23,8 +23,8 @@ You have to sent your work in *Github* with this folowing files:
 
 ### Vagrantfile
 First, create a **Vagrantfile** (sample is provided), you should change the folowing configuration: 
-* `config.vm.box`: Set the required Box (available [here](https://app.vagrantup.com/boxes/search))
-* `vb.customize` : Following the configuration of your computer, you can increase or decrease values if needed (Ram, Core..)
+* `config.vm.box`: Set the required Box (available [here](https://app.vagrantup.com/boxes/search)).
+* `vb.customize` : Following the configuration of your computer, you can increase or decrease values if needed (Ram, Core..).
 
 ### install.sh
 Then, create `install.sh` bash script who contain all the command needed for install VM with the Symfony App.
@@ -65,6 +65,7 @@ The Website will be available locally at http://test.local:4567/index.php and Ph
 
 ## Pro tips
 It's recommanded to create at begining an empty Ubuntu VM, try and launch command, and then add command line in `install.sh`
-You can install in silent mode with `-y` command : `apt-get -y upgrade`
+
+You can install in silent mode with `-y` command : `apt-get -y upgrade`.
 
 Good Luck ! :airplane:
