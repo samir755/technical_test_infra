@@ -6,7 +6,7 @@
 
 ## Goal
 
-With Vagrant, create a Ubuntu Server 20.04 LTS (Focal Fissa) in a local virtual machine. 
+With Vagrant, create an Ubuntu Server 20.04 LTS (Focal Fissa) in a local virtual machine. 
 
 This VM have to run a Web environment for a PHP Symfony application available in [this repository](https://github.com/samir755/demo).
 
@@ -31,9 +31,9 @@ First, create a **Vagrantfile** (sample provided), you should change the folowin
 * `vb.customize` : Following the configuration of your computer, you can increase or decrease values if needed (Ram, Core..).
 
 ### install.sh
-Then, create `install.sh` bash script who contain all the command needed for install VM with the Symfony App.
+Then, create `install.sh` bash script who contain all the command line needed for install Web Server environment with the Symfony App.
 
-`helpme.sh` file contain the basic command for configure a linux Web Server. Feel free to use it. 
+`helpme.sh` file contain the basic command line for configure a linux Web Server. Feel free to use it. 
 
 ### Readme.md
 
@@ -55,8 +55,8 @@ vagrant halt # Stop the VM
 The Website will be available locally at http://localhost:4567/index.php and PhpMyAdmin here http://localhost:4567/phpmyadmin.
 
 ## Pro tips
-It's recommanded to create at begining an empty Ubuntu VM, try and launch your command, and then add command line in `install.sh`
+First, create an empty Ubuntu VM, try and launch your command line, and then add it in your `install.sh`.
 
-You can install in silent mode linux with `-y` command and `--no-interaction` for Composer.
+You can use the **silent mode** with `-y` for Linux command and `--no-interaction` for Composer.
 
 Good Luck ! :airplane:
