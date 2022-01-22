@@ -66,6 +66,6 @@ The Website will be available locally at http://test.local:4567/index.php and Ph
 ## Pro tips
 It's recommanded to create at begining an empty Ubuntu VM, try and launch command, and then add command line in `install.sh`
 
-You can install in silent mode with `-y` command : `apt-get -y upgrade`.
+You can install in silent mode linux with `-y` command and `--no-interaction` for Composer.
 
 Good Luck ! :airplane:
