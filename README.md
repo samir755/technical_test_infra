@@ -37,13 +37,16 @@ Doing it like a tutorial for begineer :shipit:
 
 ### Launch and test
 Once the process is over, you should be able to connect in your VM by SSH in your terminal after build and run.
+
+Usefull command
 ```bash
-vagrant up
-vagrant ssh
+vagrant up # Start and build VM
+vagrant destroy # Delete VM
+vagrant ssh # Connect to SSH
 ```
 
 ### Pro tips
-It's recommanded to create at begining an empty Ubuntu VM, try and launch command, an then add command line in `install.sh` bash
+It's recommanded to create at begining an empty Ubuntu VM, try and launch command, an then add command line in `install.sh`
 You can install in silent mode with `-y` command : `apt-get -y upgrade`
 
 Good Luck ! :airplane:
