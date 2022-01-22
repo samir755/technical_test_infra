@@ -21,6 +21,7 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 
 # Installation des packets php/mysql
 sudo apt-get install -y php libapache2-mod-php mysql-server php-mysql php-intl
+sudo apt-get install php7.4-sqlite
 
 # Modification des valeurs date.timezone
 sed -i '/^date.timezone/d' /etc/php/7.4/apache2/php.ini
