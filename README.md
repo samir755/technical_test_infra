@@ -43,6 +43,7 @@ Usefull command
 vagrant up # Start and build VM
 vagrant destroy # Delete VM
 vagrant ssh # Connect to SSH
+vagrant halt # Stop the VM
 ```
 
 ### Configure your Windows Host
