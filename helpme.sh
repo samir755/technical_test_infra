@@ -62,7 +62,7 @@ mv composer.phar /usr/local/bin/composer
 
 
 # ---------------------------------------------
-#        Configure VHOST Apache (Optionnal)
+#        Configure VHOST Apache
 # ---------------------------------------------
 
 # Ajout du ServerName (FQDN) dans le fichier de config Apache
